@@ -2,8 +2,6 @@ from collections import namedtuple
 import altair as alt
 #from tkinter import Image
 import math
-import mkl
-mkl.domain_set_num_threads(1, domain='fft')
 import streamlit as st
 import numpy as np
 import time 
