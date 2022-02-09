@@ -1,5 +1,4 @@
 from collections import namedtuple
-from tkinter import Image
 import altair as alt
 import math
 import mkl
@@ -57,7 +56,7 @@ st.video(video_bytes)
 
 bar = st.progress(0) 
 for percent_complete in range(100): 
-    time.sleep(0.1)
+    time.sleep(0.02)
     bar.progress(percent_complete+1) 
 
 st.error('Invalid site name')
@@ -99,4 +98,5 @@ d1 = fetch_and_clean_data(url = "https://docs.google.com/spreadsheets/d/1vy0pSDI
 if st.button("Clear All"):
     # Clear values from *all* memoized functions:
     # i.e. clear values from both square and cube
-    st.experimental_memo.clear()
+    st.experimental_memo.clear() 
+
